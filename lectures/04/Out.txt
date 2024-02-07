@@ -1,0 +1,14 @@
+x>y
+a[0]=1
+a[1]=2
+a[2]=3
+a[3]=4
+a[4]=5
+ai=1
+ai=2
+ai=3
+ai=4
+ai=5
+one
+two
+three

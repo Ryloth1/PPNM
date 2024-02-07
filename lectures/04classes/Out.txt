@@ -1,0 +1,7 @@
+A.s=hello
+a.s=
+B.s=hello
+b.s=
+A.s=new string
+a.s=
+x=1
