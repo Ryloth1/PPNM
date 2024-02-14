@@ -1,0 +1,8 @@
+
+Unhandled Exception:
+System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at genlist`1[T].remove (System.Int32 i) [0x00007] in <6b6aba042d46498993401855b60cc19f>:0 
+  at main.Main () [0x000db] in <e25180aa8cfe48569009ec6adfcc11d5>:0 
+[ERROR] FATAL UNHANDLED EXCEPTION: System.IndexOutOfRangeException: Index was outside the bounds of the array.
+  at genlist`1[T].remove (System.Int32 i) [0x00007] in <6b6aba042d46498993401855b60cc19f>:0 
+  at main.Main () [0x000db] in <e25180aa8cfe48569009ec6adfcc11d5>:0 

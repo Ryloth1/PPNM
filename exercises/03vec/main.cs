@@ -10,7 +10,9 @@ static int Main(){
 	double v =new vec(4,5,6)
 
 	WriteLine($"a*u is {a*u}, u*a is {u*a}, u+v is {u+v}, -v is {-v}, u-v is {u-v} \n");
-	WriteLine()
+	print(u)
+	
+
 	
 return 0;
 
