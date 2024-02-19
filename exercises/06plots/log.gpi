@@ -1,0 +1,13 @@
+\
+	set terminal svg background "white" ;\
+	set out "Out3.gnuplot.svg" ;\
+	set key left ;\
+	set xlabel "x" ;\
+	set ylabel "lngamm(x)" ;\
+	set tics out ;\
+	set grid ;\
+	set title "lnGamma function" ;\
+	plot [-3:10]\
+		"Out3.txt" with lines notitle\
+		,"lnfactorial.data.txt" using 1:2 with points pointtype 6 notitle\
+
