@@ -1,0 +1,12 @@
+Main: nterms=2000000000 nthreads=4
+Main: starting threads...
+harm: a=1 b= 500000001
+harm: a=500000001 b= 1000000001
+harm: a=harm: sum=21.9936286826628
+Main: total sum =21.9936286826628
+harm: sum=21.3004815033485
+Maiharm: sum=0.693147180934981
+harm: sum=0.405465108983142
+Main: total sum =21.9936286849088
+arm: sum=0.693147181059924
+Main: total sum =21.9936286863254

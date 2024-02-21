@@ -1,0 +1,6 @@
+Main: nterms=-2147483648 nthreads=1
+Main: starting threads...
+Main: waiting for threads to finish...
+harm: a=1 b= -2147483648
+harm: sum=0
+Main: total sum =0

@@ -1,0 +1,6 @@
+Main: nterms=10000000 nthreads=1
+Main: starting threads...
+harm: a=1 b= 10000000
+Main: waiting for threads to finish...
+harm: sum=16.6953113658573
+Main: total sum =16.6953113658573
