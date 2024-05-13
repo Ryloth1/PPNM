@@ -37,10 +37,10 @@ class main{
         double d2 = 8*0.1;
         WriteLine($"d1={d1:e15}");
         WriteLine($"d2={d2:e15}");
-        WriteLine($"d1==d2 ? => {d1==d2}");
+        WriteLine($"With == : d1==d2 ? => {d1==d2}");
 
         
-        WriteLine($"d1==d2 ? => {approx(a,b)}\n");
+        WriteLine($"With approx: d1==d2 ? => {approx(a,b)}\n");
 
 
 return 0;

@@ -15,8 +15,9 @@ class main{
 	Write ($"{E}^{PI}={expi} \n");
 	Write ($"{PI}^{E}={piex} \n");
 	for (int x=1; x<11; x+=1){
-		prod*=x;
+		
 		Write ($"Gamma of ({x})={sfuns.fgamma(x)} ({x-1})!={prod} \n");
+		prod*=x;
 		}
 	return 0;
 	}

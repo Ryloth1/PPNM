@@ -4,10 +4,10 @@ using System.Runtime.CompilerServices;
 
 public static class QRGS{
         
-    static void backsub(matrix U, vector c){
+    public static void backsub(matrix U, vector c){
         for(int i=c.size-1; i>=0; i--){
             double sum=0;
-            for(int k=i+1; k<c.size; k++)sum+=U[i,k]*c[k];
+            for(int k=i+1; k<c.size; k++)sum+=U[i,k]*c[k];vector e = new vector(U.size2);
                 c[i]=(c[i]-sum)/U[i,i]; 
         }
     }

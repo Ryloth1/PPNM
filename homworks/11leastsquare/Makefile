@@ -9,10 +9,10 @@ Out.txt : main.exe Makefile
 	mono $< > $@
 
 matrix.dll : ../../lib/matrix.cs ../../lib/vector.cs ; $(MKLIB)
-jacobi.dll : ../../lib/jacobi.cs matrix.dll ; $(MKLIB)
+qrgs.dll : ../../lib/qrgs.cs matrix.dll ; $(MKLIB)
+ls.dll : ../../lib/ls.cs qrgs.dll matrix.dll ; $(MKLIB)
 
-
-main.exe : main.cs matrix.dll qrgs.dll; $(MKEXE)
+main.exe : main.cs matrix.dll qrgs.dll ls.dll; $(MKEXE)
 
 clean:
 	$(RM) *.exe *.dll [Oo]ut* [Ll]og*
