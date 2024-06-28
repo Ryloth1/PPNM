@@ -1,0 +1,26 @@
+Exercise A
+A.1 test decomp for tall matrix
+A=
+     0.249      0.111 
+     0.467      0.772 
+     0.658      0.433 
+QtQ=1=True
+A=QR=True
+A.2 test solve for square matrix
+QRy=b=True
+Exercise B
+B test inverse for square matrix
+A=
+     0.249      0.111      0.467 
+     0.772      0.658      0.433 
+     0.354      0.944      0.101 
+A^-1=
+     -2.21       2.78      -1.68 
+     0.486     -0.906       1.63 
+       3.2      -1.26      0.505 
+AA^-1=
+         1   5.55e-16   1.94e-16 
+  4.44e-16          1  -2.78e-16 
+  3.89e-16          0          1 
+AA^-1=1=True
+A^-1A=1=True

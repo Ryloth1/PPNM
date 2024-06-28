@@ -1,0 +1,12 @@
+\
+	set terminal svg background "white" ;\
+	set out "OutB.fit.svg";\
+	set xlabel "t (days)" ;\
+	set ylabel "Activity" ;\
+	set grid;\
+	set title "exponential fit of radioactive decay of 224Ra";\
+	f(x) = a*exp(-b*x) ;\
+	a = 142.403540630783; b = 0.171;\
+	plot "data.txt" with errorbars title "data"\
+	,f(x) title sprintf("fit: %.f*e^{-%.2f t}",a,b)\
+	

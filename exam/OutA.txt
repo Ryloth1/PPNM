@@ -1,0 +1,15 @@
+Exercise A
+Test  Two sided Jacobi SVD
+A =
+     0.249      0.111      0.467 
+     0.772      0.658      0.433 
+     0.354      0.944      0.101 
+S =
+     0.191  -4.28e-25   1.48e-19 
+ -4.28e-25      0.546   1.62e-11 
+  1.48e-19   1.62e-11       1.48 
+singular values:      0.191      0.546       1.48 
+U*S*VT = A = True 
+U^T*U = 1 = True 
+V*VT = 1 = True 
+VT*V = 1 = True 

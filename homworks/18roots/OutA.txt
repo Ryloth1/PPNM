@@ -1,0 +1,75 @@
+f = x*e(-x^2). v0 = 0
+
+Numerical results, v0 = -0.5:
+v0 = -1.59359563323136E-08. f(v0) = -1.59359563323136E-08
+Steps taken: 1. Function evals: 4
+
+Numerical results, v0 = 0:
+v0 = 0. f(v0) = 0
+Steps taken: 1. Function evals: 3
+
+Numerical results, v0 = 0.5:
+v0 = -2.23309836178132E-08. f(v0) = -2.23309836178132E-08
+Steps taken: 1. Function evals: 4
+
+(x,y) -> (1+xy, 1-x^2). v0 = (1,-1) & (-1,1)
+
+Numerical results, v0 = (-0.5, 0):
+v0 = (-1.00000000078, 0.999999994122171). f(v0) = (5.09783082414117E-09, -1.5599965763613E-09)
+Steps taken: 4. Function evals: 14
+
+Numerical results, v0 = (0.001, -0.001):
+v0 = (1.00000003318615, -1.00000003309276). f(v0) = (-6.62789183536461E-08, -6.63723065397193E-08)
+Steps taken: 3. Function evals: 19
+
+Numerical results, v0 = (0.001, 0.5):
+v0 = (1.00000000063809, -1.00000319978257). f(v0) = (-3.2004206593772E-06, -1.27618138279217E-09)
+Steps taken: 5. Function evals: 27
+
+f = ((x-1)^2, ln(x)). x0 = 1
+
+Numerical results, x0 = 0.5:
+x0 = 0.999999970243411. f(x0) = (8.85454573953149E-16, -2.97565891913246E-08).
+Steps taken: 4. Function evals: 9
+
+Numerical results, x0 = 1.2:
+x0 = 0.999994113130323. f(x0) = (3.46552345973392E-11, -5.88688700497044E-06).
+Steps taken: 2. Function evals: 5
+
+Numerical results, x0 = 2:
+x0 = 0.999997092279043. f(x0) = (8.45484116514243E-12, -2.90772518466357E-06).
+Steps taken: 4. Function evals: 9
+
+f = Rosenbrock function(a=1 b=100). vmin = (1,1), f(vmin) = 0, df(vmin) = 0
+
+Numerical results, v0 = (2, 0):
+vmin = (1.00000252864235, 1.00000500875391). f(vmin) = 6.62961796089066E-12. df(vmin) = (2.44722074144033E-05, -9.70743680994701E-06)
+Steps taken: 678. Function evals: 7819
+
+Numerical results, v0 = (0, 0):
+vmin = (0.999999764765165, 0.999999525516469). f(vmin) = 5.69465796601946E-14. df(vmin) = (1.13509620926099E-06, -8.02783128861506E-07)
+Steps taken: 207. Function evals: 1724
+
+Numerical results, v0 = (0, 2):
+vmin = (0.999999775066928, 0.999999546312682). f(vmin) = 5.20550623786048E-14. df(vmin) = (1.07862315759699E-06, -7.64244822981652E-07)
+Steps taken: 209. Function evals: 1736
+
+f = Himmelblaus function. vmin = (3,2), (-2.805,3.131), (-3.779,-3.283), (3.584,-1.848)
+f(vmin) = 0, df(vmin) = 0
+
+Numerical results, v0 = (4, 4):
+vmin = (2.99999913580942, 2.00000387895062). f(vmin) = 2.1637631032935E-10. df(vmin) = (1.36289529259223E-05, 5.59942372401406E-05)
+Steps taken: 5. Function evals: 16
+
+Numerical results, v0 = (-2, 2):
+vmin = (-2.80511823559233, 3.13131251410218). f(vmin) = 7.18984941785251E-13. df(vmin) = (-9.65947993639527E-06, 5.6593370326322E-07)
+Steps taken: 4. Function evals: 14
+
+Numerical results, v0 = (-3, -2):
+vmin = (-3.77931025901364, -3.28318600539187). f(vmin) = 8.37870405909032E-15. df(vmin) = (-2.56773760367667E-07, -5.1420377538727E-07)
+Steps taken: 5. Function evals: 22
+
+Numerical results, v0 = (3, -2):
+vmin = (3.58442834622389, -1.84812654752838). f(vmin) = 7.17834705308068E-15. df(vmin) = (4.74718197619405E-07, -2.59364619978509E-07)
+Steps taken: 4. Function evals: 14
+

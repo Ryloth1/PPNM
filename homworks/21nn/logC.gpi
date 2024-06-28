@@ -1,0 +1,12 @@
+\
+	set terminal svg background "white" ;\
+	set out "OutC.svg" ;\
+	set xlabel "x";\
+	set ylabel "y";\
+	set grid;\
+	f(x) = (cos(x)+sin(x)/2)*exp(-x/2);\
+	set title "Harmonic oscillator with Neural Network";\
+	plot "outC.txt" using 1:2 with l t "Network solution, 10 nodes" \
+	,"outC.txt" using 1:($2 + $3 + $4)  with l t "y(x) + y'(x) + y''(x)"\
+	,f(x) with l lt 0 t "exact solution"\
+	

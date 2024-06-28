@@ -256,5 +256,18 @@ public static matrix newrandmatrix(int n){
 	return A;
 }
 
+public static matrix diag(vector d, int j = 0){ //constructs square matrix with a given diagonal or shifted diagonal
+	matrix M = new matrix(d.size + Abs(j));
+	if(j >= 0)for(int i = 0; i < d.size; i++)M[i,i+j]=d[i];
+        if(j < 0)for(int i = -j; i < d.size-j; i++)M[i,i+j]=d[i+j]; 
+	return M;
+}
+
+public void sym2update(vector u, vector v, double s=1){
+        for(int i=0;i<size1;i++)
+        for(int j=0;j<size2;j++)
+                this[i,j]+=(u[i]*v[j] + u[j]*v[i])*s;
+}
+
 }//matrix
 

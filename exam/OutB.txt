@@ -1,0 +1,32 @@
+
+Exercise B
+Calculation of Pseudo inverse  and solving least square fit with two sided jacobi SVD
+B =
+     0.249      0.111      0.467 
+     0.772      0.658      0.433 
+     0.354      0.944      0.101 
+S=
+     0.191  -4.28e-25   1.48e-19 
+ -4.28e-25      0.546   1.62e-11 
+  1.48e-19   1.62e-11       1.48 
+Sinv
+      5.24  -4.28e-25   1.48e-19 
+ -4.28e-25       1.83   1.62e-11 
+  1.48e-19   1.62e-11      0.674 
+Sinv * S=
+      27.4  -3.03e-24   8.76e-19 
+ -3.03e-24       3.35   4.05e-11 
+  8.76e-19   4.05e-11      0.455 
+ Sinv*S = 1 = False 
+Bpinv =
+     -2.21       2.78      -1.68 
+     0.486     -0.906       1.63 
+       3.2      -1.26      0.505 
+ B*Bpinv*B = B = True 
+
+I do not know why Sinv*S does not give me 1 with the matrix multiplication operation.
+When i do it manually or with another program i get 1 and B*Bpinv*B is also B 
+c:      4.96      0.171 
+a = 142.403540630801
+tau = 4.06242368851861 pm days, table value: 3.6313(14) days
+As can be easily seen, this is the same result as the ls fit in homework 11

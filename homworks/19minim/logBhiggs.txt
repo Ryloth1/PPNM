@@ -1,0 +1,2 @@
+Chi^2 value: 26.8695117805556. Number of steps: 413. Number of evaluations: 12698
+Parameters: m = 125.972186203834, gamma = 2.08641923708765, A = 9.8766008245018

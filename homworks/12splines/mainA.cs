@@ -1,38 +1,19 @@
-class main{
+using System;
+using static System.Console;
+using static System.Math;
 
-    public static int binsearch(double[] x, double z){      /* locates the interval for z by bisection */ 
-	        if(!(x[0]<=z && z<=x[x.Length-1])) throw new System.Exception("binsearch: bad z");
-	        int i=0, j=x.Length-1;
-	        while(j-i>1){
-		        int mid=(i+j)/2;
-		        if(z>x[mid]) i=mid; else j=mid;
-		    }
-	        return i;
-	    }
-
-        public static double linterp(double[] x, double[] y, double z){
-            int i=binsearch(x,z);
-            double dx=x[i+1]-x[i]; if(!(dx>0)) throw new System.Exception("uups...");
-            double dy=y[i+1]-y[i];
-            return y[i]+dy/dx*(z-x[i]);
-        }
-    public static int Main(){
-
-        vector x = new vector(10);
-        vector y = new vector(10);
-        for(int i = 0; i<10; i++){
-            x[i] = i;
-            y[i] = System.Math.Sin(x[i]);
-            //System.Console.WriteLine($"{x[i]} {y[i]}");
-        }
-        
-
-        for(double z= 1.0/16;z<=9;z+=1.0/16){
-		    System.Console.WriteLine($"{z} {linterp(x, y, z)}");
-		} 
-
-
-
-        return 0;
-    }
-}
+public class main{
+	public static int Main(){
+		int N = 10, M = 100;
+		System.Random random = new System.Random();
+		double[] x = new double[N], y = new double[N], z = new double[M];
+		for(int i = 0; i < N; i++){
+			x[i] = i+1;
+			y[i] = random.NextDouble();
+			Error.WriteLine($"{x[i]} {y[i]}");}
+		for(int i = 0; i < M; i++){
+			z[i] = x[0] + i*(x[N-1]-x[0])/(M-1);
+			Out.WriteLine($"{z[i]} {interp.linterp(x,y,z[i])} {interp.linterpInt(x,y,z[i])}");}
+		return 0;
+	}//Main
+}//main

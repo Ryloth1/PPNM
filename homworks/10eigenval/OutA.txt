@@ -1,0 +1,20 @@
+Exercise A
+Test Eigenvalue decomposition
+A =
+     0.549      0.851      0.763 
+     0.851      0.724      0.843 
+     0.763      0.843      0.928 
+EigenValues:     -0.219     0.0383       2.38 
+Eigenvalues using opt:    -0.219     0.0383       2.38 
+Eigenvectors = 
+     0.745      0.408      0.528 
+    -0.667      0.462      0.584 
+  -0.00577     -0.788      0.616 
+Eigenvectors using opt = 
+     0.745      0.408      0.528 
+    -0.667      0.462      0.584 
+  -0.00577     -0.788      0.616 
+V^T*A*V = D = True 
+V*D*VT = A = True 
+V*VT = 1 = True 
+VT*V = 1 = True 
